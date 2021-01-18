@@ -1,0 +1,195 @@
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+.card_master {
+  padding-bottom: 2em;
+  width: 350px;
+}
+
+@media screen and (min-width: 250px) and (max-width: 768px) {
+  .card_master {
+    padding: 1em 1.5em 1em 1.5em;
+  }
+}
+
+.card_master__component {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5%;
+  -webkit-box-shadow: 1px 1px 80px 1px #2120208c;
+          box-shadow: 1px 1px 80px 1px #2120208c;
+  background-color: #fff;
+}
+
+.card_master__component .component__top {
+  background-image: url(../images/bg-pattern-card.svg);
+  background-size: cover;
+  height: 150px;
+  width: 100%;
+}
+
+.card_master__component .component__top img {
+  width: 100%;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+}
+
+.card_master__component .component__middle__casing {
+  position: relative;
+  content: '';
+  top: -2em;
+}
+
+.card_master__component .component__middle__details {
+  padding: 5px;
+}
+
+.card_master__component .component__middle__details h3 {
+  display: inline;
+}
+
+.card_master__component .component__middle__details span {
+  display: inline-block;
+}
+
+.card_master__component .location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card_master__component .component__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-top: 1px solid #99979769;
+  width: 100%;
+  padding: 15px;
+}
+
+.card_master__component .component__bottom__followers, .card_master__component .component__bottom__likes, .card_master__component .component__bottom__photos {
+  margin-top: .5em;
+}
+
+.card_master__component .component__bottom__followers h4, .card_master__component .component__bottom__likes h4, .card_master__component .component__bottom__photos h4 {
+  text-align: center;
+  margin: 0;
+}
+
+.card_master__component .component__bottom__followers .socials, .card_master__component .component__bottom__likes .socials, .card_master__component .component__bottom__photos .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2.5px;
+}
+
+.userimg {
+  position: relative;
+  content: '';
+  top: -2.5em;
+  left: 1.5em;
+  border: 5px solid white;
+  border-radius: 50%;
+}
+
+.circles {
+  z-index: -1;
+}
+
+.circles .layerone {
+  position: absolute;
+  top: -30em;
+  left: -8em;
+}
+
+@media screen and (min-width: 250px) and (max-width: 768px) {
+  .circles .layerone {
+    left: -40em;
+  }
+}
+
+.circles .layertwo {
+  position: absolute;
+  bottom: -30em;
+  right: -8em;
+}
+
+@media screen and (min-width: 250px) and (max-width: 768px) {
+  .circles .layertwo {
+    right: -40em;
+  }
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #19a2ae;
+  overflow: hidden;
+}
+
+.attribution {
+  margin-top: 2em;
+}
+
+h3 {
+  margin: 0;
+  text-align: center;
+}
+
+h3, h4 {
+  font-weight: 700;
+}
+
+span {
+  font-weight: 400;
+  font-size: 15px;
+  color: #6a6f81;
+}
+/*# sourceMappingURL=main.css.map */

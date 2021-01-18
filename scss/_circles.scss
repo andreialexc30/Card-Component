@@ -1,0 +1,17 @@
+.circles {
+    z-index: -1;
+
+    .layerone {
+        position: absolute;
+        top: -30em;
+        left: -8em;
+        @include responsive-layerone;
+    }
+
+    .layertwo {
+        position: absolute;
+        bottom: -30em;
+        right: -8em;
+        @include responsive-layertwo;
+    }
+}

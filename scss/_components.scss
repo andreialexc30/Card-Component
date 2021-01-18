@@ -1,0 +1,76 @@
+@import 'globals';
+
+.card_master {
+    padding-bottom: 2em;
+    width: 350px;
+    @include responsive-card;
+
+    &__component {
+        @include flexbox;
+        border-radius: 5%;
+        box-shadow: 1px 1px 80px 1px #2120208c;
+        background-color: #fff;
+
+        .component__top {
+            background-image: url(../images/bg-pattern-card.svg);
+            background-size: cover;
+            height: 150px;
+            width: 100%;
+            
+            img {
+                width: 100%;
+                border-top-left-radius: 5%;
+                border-top-right-radius: 5%;
+            }
+        }
+    
+        
+        .component__middle__casing {
+            position: relative;
+            content: '';
+            top: -2em;
+        }
+
+        .component__middle__details {
+            padding: 5px;
+            
+            h3 {
+                display: inline;
+            }
+
+            span {
+                display: inline-block;
+            }
+        }
+
+        .location {
+            display: flex;
+            justify-content: center;
+        }
+      
+    
+        .component__bottom {
+            display: flex;
+            justify-content: space-around;
+            border-top: 1px solid #99979769;
+            width: 100%;
+            padding: 15px;
+    
+            &__followers, &__likes, &__photos {
+                margin-top: .5em;
+
+                h4 {
+                    text-align: center;
+                    margin: 0;
+                }
+
+                .socials {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 2.5px;
+                }
+            }
+        }
+    }
+}
+
